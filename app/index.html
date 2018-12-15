@@ -83,5 +83,156 @@
   <footer>
     <p>Copyright &copy; 2016 Clear View Escapes. All rights reserved. <a href="#">Get in Touch</a></p>
   </footer>
+
+<!--  GIT//GitHub
+
+Repository(repo) = Project
+
+Working directory
+
+Staging = Control what gets committed ->  Preparing,getting ready (одбираме што од проектот би сакале да зачуваме)
+
+Commit = Git's way of saving
+
+Command-line = Terminal ->a place where we can type commands
+
+git status -што имаме сменето во последно време во кодот = what file is last modified
+
+git add -A -> ги додаваме сите промени 
+
+git status = changes to be commited -> промените што се спремни за commit
+
+git commit -m ''(добро е да се додава секогаш и порака кога правиме commit)
+
+
+Доколку некој ни го смени file-от или ни го избрише или додаде нешто друго се што треба да направиме е: 
+
+git checkout--. (ни го враќа file-от) Дури и ако неког го избрише и од кантата. 
+=== Зачувување на работите локалнo
+
+
+Доколку сакаме да ги зачуваме проектите дури и без да го имаме наштиот лап-топ, соработување со други решението е Push & Pull === Repo Hosting ---> GitHub
+
+
+Repo on our computer ===> Repo on GitHub's server (Push)
+
+git push origin master = ставање на проетот на GitHub
+црвена боја- она што сме го избришале од проектот 
+зелена боја- она што сме го додале
+
+Repo on GitHub's server ===> Repo on our computer (Pull)
+
+git pull origin master = превземање на проектот од GitHub
+
+Доколку смениш нешто и сакаш да му направиш update ја правиш истата постапка:
+
+
+git status 
+
+git add -A
+
+git status 
+
+git commit -m''
+
+git push origin master 
+
+
+
+
+
+Command-line = Terminal ===> Git Bash
+
+git --version = да ја провериш верзијата на програмот
+
+git config --global user.name "Bojana"
+
+git config --global user.email "bojanaspasovska94@yahoo.com"
+
+pwd ===> покажува негде (file) во компјутерот
+
+за да го смениш горенаведениот пат =
+
+cd ===> и го влечеш фолдерот... (change directory)
+
+pwd - да се увериш дали се наоѓаш таму кај што треба
+
+mkdir "името на новиот фолдер" ===> за да направиш нов фолдер во фолдерот во кој моментално се наоѓаш (make directory)
+
+cd името на новиот фолдер (или го влечеш фолдерот до таму) ===> за да влезеш во новиот фолдер
+
+git init ===>  Креирање репозитори = initialized empty Git repozitory
+
+touch "index.html" ===> креирање на html file 
+
+Оди во index.html напиши нешто
+
+git status = проверуваме во кој фолдер има промена 
+
+git add index.html = за да го додадеме за работа 
+
+giт status 
+
+git commit -m''
+
+
+
+Clone ===> Copy an existing repository from a server to our computer's hard drive.
+Земање на веќе постоечко репо на серверот некаде, и негово клонирање или копирање во твојот компјутер.
+
+За почеток се вреќаме во првиот фолдер 
+
+cd името на фолдерот
+
+git clone адресата од која сакаме да копираме пр. https://github.com/LearnWebCode/welcome-to-git.git
+
+cd file name 
+
+git clone https://github.com/LearnWebCode/travel-site-files.git
+
+cd file name 
+
+git remote -v ===> да искочиш од репото од кое клонираше
+
+git remote set-url origin https://github.com/BojanaSpasovska/travel-site.git ===> да го ставиш репото на твојот git
+
+git remote -v ===> да провериш дали си на твојот git
+
+git push origin master ===> бидејки веќе си на твојот git го ставаш проектот
+
+
+смени нешто на проектот 
+
+git status 
+
+git add -A
+
+git status
+
+git commit -m''
+
+git push origin master
+
+
+
+
+
+
+Node js
+
+automation (save time) and organization (saves our sanity) -->
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
