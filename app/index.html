@@ -220,7 +220,78 @@ git push origin master
 
 Node js
 
-automation (save time) and organization (saves our sanity) -->
+automation (save time) and organization (saves our sanity)
+node -v  ==>  да ја провериш верзијата на ноде 
+ touch "test.js" ==> правиш нов file
+пишуваш нешто во новосоздадениот file
+node името на новосоздадениот file или влечеш ==> ти го враќа тоа што си го повикал пример како во console.
+
+
+Преку node.js да создадеме нов HTML file во истиот фолдер 
+Во Visual studio Code во нашиот фолдер пример "test.js" пишуваме:
+var името на варијаблата= require("fs");===> fs e името на node модулот или пакетот што ќе го користиме 
+името на варијаблата.writeFile(__dirname + "/index.html", "<h1> HTML is great</h1>", function(error){
+if (error){
+return console.log(error);
+}else{
+return console.log ("Congrats")
+}
+})
+fs (file system)===> користи 3 аргументи 
+1. directory name- ова ќе му каже на ноде да провери во сегашниот фолдер + името на новиот file
+2. што да има во него
+3. функција која ќе ни каже дали сме успеале или не (callback function)
+
+Да симнеме и да зачуваме слика од интернет во нашиот фолдер
+Правиме нов модул или пакет од ноде во visual studio Code
+var името на варијаблата =  require('https');
+var MyPhotoLocation= "https://www.wildlifearchives.com/wp-content/uploads/2018/01/orignal-jasper-canada-most-beautiful-picture-of-the-day-january-most-beautiful-picture-1515339231gk84n-1280x854.jpg" ===> za da ne ni zafati mn mesto vo get 
+името на варијаблата.get(MyPhotoLocation,function(responce===> параметар за меморијата на сликата (data)){
+    responce.pipe===> што сакаме да направиме? ја паќаме сликата во комјутерот во истиот фолдер(fs.createWriteStream(__dirname + "/elenche.jpg") ===>пат каде сакаме да ја ставиме сликата и името);
+});
+
+get===> koristi 2 argumenti
+1.URLто со кое сакаш да работиш (за да не заземе мн место најубаво е да се стави во посебна варијабла
+2.функција со која ќе кажеме што сакаме да направиме со сликата 
+
+
+
+NPM 
+
+Type of package 
+
+#1 Node packages
+-Automation
+-Build tools
+-Server tasks
+#2 Other things
+-jQuary
+-Lodash
+-Bootstrap
+-Normalize.css
+
+cd file name (travel-site)
+npm install jquery ===> инсталација на пакетот за jquery
+Меѓутоа на нас не ни треба поголема организација и поради тоа го бришеме фолдерот кој штотуку го направивме node_modules
+npm init ===> ги внесуваме потребните информации за проектот или за афтоматски стискаме неколку пати ентер
+новонаправениот фолдер Package.json го отвараме во Visual Studio Code
+и ги бришеме сите работи од file-от освен првите две 
+npm install jquery --save ===> повторно инсталираме jquery
+npm install normalize.css --save
+Избриши го фолдерот node_modules
+Ако сакаме да ги вратиме пишуваме само npm install
+
+Како да ги знаеме точните имиња на пакетите што сакаме да ги симнеме?
+Одиме на npmjs.com ili na google so dodatok npm
+Како всушност ги користиме пакетите?
+Не треба да ги преместуваме за полесна достаност
+Зашто новите фолдери со пакети не ги имаме на Git?
+Се што ни е потребно е package.json и npm install
+git status ===> да видиме какви промени имаме 
+
+
+
+-->
 
 
 
